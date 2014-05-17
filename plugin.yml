@@ -1,0 +1,31 @@
+name: MinecraftEconomy
+version: 3.0
+author: Langur
+description: A simple economy plugin.
+main: me.langur.minecrafteconomy.MinecraftEconomy
+depend: [Vault]
+commands:
+  coins:
+    aliases: [eco, money, balance, bal]
+    description: MinecraftEconomy command.
+permissions:
+  MinecraftEconomy.*:
+    description: Ability to use all commands
+    children:
+      MinecraftEconomy.add: true
+      MinecraftEconomy.remove: true
+      MinecraftEconomy.clear: true
+      MinecraftEconomy.pay: true
+    default: op
+  MinecraftEconomy.add:
+    description: Ability to use /coins add
+    default: op
+  MinecraftEconomy.remove:
+    description: Ability to use /coins remove
+    default: op
+  MinecraftEconomy.clear:
+    description: Ability to do /coins clear
+    default: op
+  MinecraftEconomy.pay:
+    description: Ability to do /coins pay
+    default: op
