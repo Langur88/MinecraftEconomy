@@ -26,6 +26,6 @@ public class Check extends EcoCommand {
 		
 		String name = args[0];
 		
-		sender.sendMessage(prefix + ChatColor.GREEN + name + " has " + sm.getBalance(name) + " coins.");
+		sender.sendMessage(prefix + ChatColor.GREEN + "The player " + name + " has " + sm.getBalance(name) + " coins.");
 	}
 }
