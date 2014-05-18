@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 import me.langur.minecrafteconomy.commands.Add;
+import me.langur.minecrafteconomy.commands.Check;
 import me.langur.minecrafteconomy.commands.Clear;
 import me.langur.minecrafteconomy.commands.EcoCommand;
 import me.langur.minecrafteconomy.commands.Pay;
@@ -25,6 +26,7 @@ public class CommandManager implements CommandExecutor {
 		cmds.add(new Remove());
 		cmds.add(new Clear());
 		cmds.add(new Pay());
+		cmds.add(new Check());
 	}
 
 	

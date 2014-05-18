@@ -1,5 +1,5 @@
 name: MinecraftEconomy
-version: 3.0
+version: 4.0
 author: Langur
 description: A simple economy plugin.
 main: me.langur.minecrafteconomy.MinecraftEconomy
@@ -16,6 +16,7 @@ permissions:
       MinecraftEconomy.remove: true
       MinecraftEconomy.clear: true
       MinecraftEconomy.pay: true
+      MinecraftEconomy.check: true
     default: op
   MinecraftEconomy.add:
     description: Ability to use /coins add
@@ -28,4 +29,7 @@ permissions:
     default: op
   MinecraftEconomy.pay:
     description: Ability to do /coins pay
+    default: op
+  MinecraftEconomy.check:
+    description: Ability to do /coins check
     default: op

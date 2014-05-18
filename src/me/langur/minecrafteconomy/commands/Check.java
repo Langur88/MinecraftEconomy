@@ -5,16 +5,16 @@ import me.langur.minecrafteconomy.SettingsManager;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 
-public class Clear extends EcoCommand {
+public class Check extends EcoCommand {
 	private String prefix = ChatColor.DARK_GRAY + "[" + ChatColor.GOLD + "MinecraftEconomy" + ChatColor.DARK_GRAY + "] ";
 	SettingsManager sm = SettingsManager.getInstance();
 	
-	public Clear() {
-		super("Clear", "Clears a players balance.", "<player>");
+	public Check() {
+		super("Check", "Check a player's balance.", "<player>");
 	}
-
+	
 	public void run(CommandSender sender, String[] args) {
-		if(!sender.hasPermission("MinecraftEconomy.clear")) {
+		if(!sender.hasPermission("MinecraftEconomy.check")) {
 			sender.sendMessage(prefix + ChatColor.RED + "You can't use this command.");
 			return;
 		}
@@ -26,7 +26,6 @@ public class Clear extends EcoCommand {
 		
 		String name = args[0];
 		
-		sm.removeBalance(name, sm.getBalance(name));
-		sender.sendMessage(prefix + ChatColor.GREEN + "Cleared " + name + "'s balance.");
+		sender.sendMessage(prefix + ChatColor.GREEN + name + " has " + sm.getBalance(name) + " coins.");
 	}
 }
