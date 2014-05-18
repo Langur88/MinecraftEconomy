@@ -11,7 +11,7 @@ public class Pay extends EcoCommand {
 	SettingsManager sm = SettingsManager.getInstance();
 	
 	public Pay() {
-		super("Pay", "Pay a player with points.", "<player> <amount>");
+		super("Pay", "Pay a player with coins.", "<player> <amount>");
 	}
 	
 	public void run(CommandSender sender, String[] args) {
