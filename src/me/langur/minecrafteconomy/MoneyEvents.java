@@ -14,6 +14,6 @@ public class MoneyEvents implements Listener {
 	public void onPlayerChat(AsyncPlayerChatEvent e) {
 		Player p = e.getPlayer();
 		
-		e.setFormat(ChatColor.DARK_GRAY + "[" + ChatColor.GOLD + sm.getBalance(p.getName().toLowerCase()) + ChatColor.DARK_GRAY + "] " + p.getDisplayName() + ChatColor.GOLD + ": " + ChatColor.WHITE + e.getMessage());
+		e.setFormat(ChatColor.DARK_GRAY + "[" + ChatColor.GOLD + "$" + sm.getBalance(p.getName().toLowerCase()) + ChatColor.DARK_GRAY + "] " + p.getDisplayName() + ChatColor.GOLD + ": " + ChatColor.WHITE + e.getMessage());
 	}
 }
