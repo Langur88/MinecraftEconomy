@@ -13,6 +13,8 @@ public class MinecraftEconomy extends JavaPlugin {
 		
 		sm.setup(this);
 		
+		Bukkit.getServer().getPluginManager().registerEvents(new MoneyEvents(), this);
+		
 		CommandManager cm = new CommandManager();
 		getCommand("coins").setExecutor(cm);
 		
