@@ -1,5 +1,7 @@
 package me.langur.minecrafteconomy;
 
+import net.gravitydevelopment.updater.Updater;
+import net.gravitydevelopment.updater.Updater.UpdateType;
 import net.milkbowl.vault.economy.Economy;
 
 import org.bukkit.Bukkit;
@@ -17,6 +19,8 @@ public class MinecraftEconomy extends JavaPlugin {
 		
 		CommandManager cm = new CommandManager();
 		getCommand("coins").setExecutor(cm);
+		
+		new Updater(this, 76869, getFile(), UpdateType.DEFAULT, true);
 		
 		if(Bukkit.getServer().getPluginManager().getPlugin("Vault") != null) {
 			Bukkit.getServer().getServicesManager().register(Economy.class, new VaultConnector(), this, ServicePriority.Highest);

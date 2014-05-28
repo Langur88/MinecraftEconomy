@@ -2,6 +2,8 @@ package me.langur.minecrafteconomy;
 
 import java.util.List;
 
+import org.bukkit.OfflinePlayer;
+
 import net.milkbowl.vault.economy.Economy;
 import net.milkbowl.vault.economy.EconomyResponse;
 import net.milkbowl.vault.economy.EconomyResponse.ResponseType;
@@ -160,6 +162,98 @@ public class VaultConnector implements Economy {
 	@Override
 	public EconomyResponse withdrawPlayer(String player, String world, double amnt) {
 		return withdrawPlayer(player, amnt);
+	}
+
+	@Override
+	public EconomyResponse createBank(String arg0, OfflinePlayer arg1) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean createPlayerAccount(OfflinePlayer arg0) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean createPlayerAccount(OfflinePlayer arg0, String arg1) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public EconomyResponse depositPlayer(OfflinePlayer arg0, double arg1) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public EconomyResponse depositPlayer(OfflinePlayer arg0, String arg1,
+			double arg2) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public double getBalance(OfflinePlayer arg0) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double getBalance(OfflinePlayer arg0, String arg1) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public boolean has(OfflinePlayer arg0, double arg1) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean has(OfflinePlayer arg0, String arg1, double arg2) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean hasAccount(OfflinePlayer arg0) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean hasAccount(OfflinePlayer arg0, String arg1) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public EconomyResponse isBankMember(String arg0, OfflinePlayer arg1) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public EconomyResponse isBankOwner(String arg0, OfflinePlayer arg1) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public EconomyResponse withdrawPlayer(OfflinePlayer arg0, double arg1) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public EconomyResponse withdrawPlayer(OfflinePlayer arg0, String arg1,
+			double arg2) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 }
